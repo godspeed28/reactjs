@@ -1,0 +1,50 @@
+/* Custom navbar styling */
+.navbarCustom {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 0;
+}
+
+/* Active link styling */
+.active {
+  color: #61dafb !important;
+  font-weight: 500;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: #61dafb;
+  border-radius: 2px;
+}
+
+/* Hover effect for nav links */
+.navLinkHover {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navLinkHover:hover {
+  color: #61dafb !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbarCustom {
+    padding: 0.5rem 0;
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .active::after {
+    display: none;
+  }
+}
